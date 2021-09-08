@@ -12,7 +12,7 @@ public class Ananas implements Fruit{
     public Ananas()
     {
         this.prix = 0.5;  //prix en euros
-        this.origine="Espagne";
+        this.origine="Gabon";
     }
 
     public Ananas(double prix, String origine)
@@ -50,7 +50,7 @@ public class Ananas implements Fruit{
     }
 
     @Override
-    public boolean equals(Object o){  //predicat pour tester si 2 Ananass sont equivalentes
+    public boolean equals(Object o){  //predicat pour tester si 2 Ananas sont equivalents
         if(o != null && getClass() == o.getClass()){
             Ananas or = (Ananas) o;
             return (prix == or.prix && origine.equals(or.origine));
